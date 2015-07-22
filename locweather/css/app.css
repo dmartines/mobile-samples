@@ -1,0 +1,32 @@
+body {
+	background-color: #65a0b3;
+	color: #fff;
+}
+
+.panel, .panel-heading, .list-group, .list-group li {
+	background-color: #477f91 !important;
+	color: #fff !important;
+}
+
+#weather {
+	margin-bottom: 20px;
+}
+
+footer {
+	text-align: center;
+	background: #333;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+	color: #fff;
+}

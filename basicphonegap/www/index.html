@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-mdpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+        <title>Foobar web design</title>
+    </head>
+    <body>
+        <div class="app">
+            <div data-role="page" id="home">
+
+                <div data-role="header">
+                    <h1>Foobar web design</h1>
+                </div><!-- /header -->
+
+                <div data-role="content">   
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#home" class="ui-btn-active">Home</a></li>
+                            <li><a href="#about">About</a> </li>
+                            <li><a href="#contact">Contact</a> </li>
+                        </ul>
+                    </nav>
+                    <h3>Welcome to foobar</h3>
+                    <img src="img/banner.png" class="banner">
+                    <p>This is a single page boilerplate template that you can copy to build your first jQuery Mobile page. Each link or form from here will pull a new page in via Ajax to support the animated page transitions.</p>     
+                    <a href="#contact" class="ui-shadow ui-btn ui-corner-all">Contact us today</a>
+                </div><!-- /content -->
+                
+                <footer data-role="footer">
+                    <h4>Copyright &copy; 2015</h4>
+                </footer><!-- /footer -->
+                
+            </div><!-- /page -->
+
+            <div data-role="page" id="about">
+
+                <div data-role="header">
+                    <h1>About Foobar</h1>
+                </div><!-- /header -->
+
+                <div data-role="content">   
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about" class="ui-btn-active">About</a> </li>
+                            <li><a href="#contact">Contact</a> </li>
+                        </ul>
+                    </nav>
+                    <h3>About us</h3>
+                    <p>This is the about content.</p>
+                </div><!-- /content -->
+                
+                <footer data-role="footer">
+                    <h4>Copyright &copy; 2015</h4>
+                </footer><!-- /footer -->
+                
+            </div><!-- /page -->
+
+
+            <div data-role="page" id="contact">
+
+                <div data-role="header">
+                    <h1>Contact Foobar</h1>
+                </div><!-- /header -->
+
+                <div data-role="content">   
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a> </li>
+                            <li><a href="#contact" class="ui-btn-active">Contact</a> </li>
+                        </ul>
+                    </nav>
+                    <h3>Contact us</h3>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.690328406275!2d-71.23740099999996!3d42.43432599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e39db370e83b61%3A0xcbbffbd230b01179!2s58+Bridge+St%2C+Lexington%2C+MA+02421!5e0!3m2!1sen!2sus!4v1437103473285" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Location</h3>
+                    <ul>
+                        <li><strong>Foobar Web Design</strong></li>
+                        <li>58 Bridge St</li>
+                        <li>Lexington, MA 02421</li>
+                        <li><strong>Email:</strong> dan@foobar.com</li>
+                        <li><strong>Phone:</strong> 555-555-5555</li> 
+                    </ul>
+                </div><!-- /content -->
+                
+                <footer data-role="footer">
+                    <h4>Copyright &copy; 2015</h4>
+                </footer><!-- /footer -->
+                
+            </div><!-- /page -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

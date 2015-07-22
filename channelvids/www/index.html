@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+        <title>Channel Vids</title>
+    </head>
+    <body>
+        <div class="app">
+            <div data-role="page" id="home">
+
+                <div data-role="header">
+                    <h1>Channel Vidz</h1>
+                    <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
+                </div><!-- /header -->
+
+                <div data-role="content">   
+                    <img src="img/logo.png" id="logo">
+                    <div id="showvideo"></div>
+                    <br><br>
+                    <ul id="vidlist" data-role="listview"></ul>
+                </div><!-- /content -->
+
+                <footer data-role="footer">
+                    <h4>Copyright &copy; 2015</h4>
+                </footer><!-- /footer -->
+
+                <div data-role="popup" id="popupdialog" data-overlay-theme="a" data-theme="c" data-dismissable="false" style="max-width:400px;" class="ui-corner-all">
+                    <div data-role="header">
+                        <h1>Add channel</h1>
+                    </div><!-- /header -->
+                    <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content"> 
+                        <h3 class="ui-title">Please enter a channel name</h3>   
+                        <input type="text" id="channelname" placeholder="Channel name">
+                        <a href="#" id="channelBtnCancel" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancel</a>
+                        <a href="#" id="channelBtnGo" data-role="button" data-inline="true" data-rel="back" data-theme="b" data-transition="flow">Go</a>
+                    </div><!-- /content -->
+
+                </div>
+                
+            </div><!-- /page -->
+
+            <div data-role="page" id="options">
+
+                <div data-role="header">
+                    <a href="#home" data-icon="delete" class="ui-btn-left">Cancel</a>
+                    <h1>Options</h1>
+                    <a href="#" id="saveOptions" data-icon="check" data-theme="b">Save</a>
+                </div><!-- /header -->
+
+                <div data-role="content">   
+                    <div data-role="fieldcontain">
+                        <label for="channelNameOptions">Channel name:</label>
+                        <input type="text" name="channelNameOptions" id="channelNameOptions" placeholder="Enter channel name">
+                        <br>
+                        <div class="ui-btn ui-input-btn ui-shadow">
+                            Clear channel
+                            <input type="button" id="clearchannel" data-corners="false" data-enhanced="true" value="Clear channel">
+                        </div>
+                        <br>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="maxResultsOptions">Max results:</label>
+                        <input tyle="text" id="maxResultsOptions" name="maxResultsOptions" placeholder="Enter a number between 1-20">
+                    </div>
+                </div><!-- /content -->
+                
+                <footer data-role="footer">
+                    <h4>Copyright &copy; 2015</h4>
+                </footer><!-- /footer -->
+                
+            </div><!-- /page -->
+
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
